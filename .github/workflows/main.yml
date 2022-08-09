@@ -20,6 +20,6 @@ jobs:
         with:
           static-top-text: '_This documentation is self-generated and will be overwritten. Please do not edit it manually._'
           static-bottom-text: '_This documentation is self-generated and will be overwritten. Please do not edit it manually._'
-          file-path: './README.md'
+          file-path: './TEST.md'
           notion-token: ${{ secrets.NOTION_TOKEN }}
           notion-page-id: ${{ secrets.NOTION_PAGE_ID }}

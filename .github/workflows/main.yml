@@ -13,10 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Checkout and upload Readme to Notion
     steps:
-      - uses: actions/checkout@main
-      - name: Sync README to Notion
-        uses: Elioby/notion-sync-md-page@main
+      - name: checkout
+        uses: "actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b"
+      - name: Upload to Notion
+        uses: agonzalezl/readme-to-notion-action@88b6cb8eea354ac61c589f540e40cacadf0c8ecb
         with:
-          token: ${{ secrets.NOTION_TOKEN }}
-          page: ${{ secrets.NOTION_PAGE_ID }}
-          mdFile: './README.md'
+          static-top-text: '_This documentation is self-generated and will be overwritten. Please do not edit it manually._'
+          static-bottom-text: '_This documentation is self-generated and will be overwritten. Please do not edit it manually._'
+          file-path: './README.md'
+          notion-token: ${{ secrets.NOTION_TOKEN }}
+          notion-page-id: ${{ secrets.NOTION_PAGE_ID }}

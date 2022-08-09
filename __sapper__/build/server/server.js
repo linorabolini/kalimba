@@ -19,7 +19,7 @@ var zlib = _interopDefault(require('zlib'));
 const KalimbaSSR = index.create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	let MyComponent;
   index.onMount(async () => {
-    const module = await new Promise(function (resolve) { resolve(require('./Kalimba-4d408510.js')); });
+    const module = await new Promise(function (resolve) { resolve(require('./Kalimba-94dca9ea.js')); });
     MyComponent = module.default;
   });
 

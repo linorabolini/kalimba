@@ -43,33 +43,10 @@
     });
   });
 
-  console.log(notesDict);
-
-  const INTRO = [
-    ["E3"],
-    [],
-    ["E3"],
-    ["E3"],
-    [],
-    ["E3"],
-    ["E3"],
-    [],
-    ["E3"],
-    ["E3"],
-    ["E3"],
-    ["E3"],
-    ["E3"],
-    [],
-    ["E3"],
-    ["E3"],
-    [],
-    ["E3"],
-    ["E3"]
-  ];
-
   function stopSong() {
     clearInterval(songInterval);
   }
+
   function playSong(song) {
     const s = [...song];
     let t = 0;
